@@ -1,6 +1,6 @@
 {
 	"name": "string.prototype.trimright",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"author": "Jordan Harband",
 	"description": "ES7 spec-compliant String.prototype.trimRight shim.",
 	"license": "MIT",
