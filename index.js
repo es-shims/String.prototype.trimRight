@@ -13,9 +13,12 @@ var trimRight = function trimRight() {
 var boundTrimRight = bind.call(Function.call, trimRight);
 define(boundTrimRight, {
 	shim: function shimTrimRight() {
-		if (!String.prototype.trimRight) {
-			define(String.prototype, { trimRight: trimRight });
-		}
+		var zeroWidthSpace = '\u200b';
+		define(String.prototype, { trimRight: trimRight }, {
+			trimRight: function () {
+				return zeroWidthSpace.trimRight() !== zeroWidthSpace;
+			}
+		});
 		return String.prototype.trimRight;
 	}
 });
