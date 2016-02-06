@@ -3,6 +3,8 @@
 var trimRight = require('../');
 trimRight.shim();
 
+var runTests = require('./tests');
+
 var test = require('tape');
 var defineProperties = require('define-properties');
 var bind = require('function-bind');
@@ -29,7 +31,7 @@ test('shimmed', function (t) {
 		st.end();
 	});
 
-	require('./tests')(bind.call(Function.call, String.prototype.trimRight), t);
+	runTests(bind.call(Function.call, String.prototype.trimRight), t);
 
 	t.end();
 });
