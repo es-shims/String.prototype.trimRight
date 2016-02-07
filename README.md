@@ -10,7 +10,9 @@ String.prototype.trimRight <sup>[![Version Badge][npm-version-svg]][package-url]
 
 [![browser support][testling-svg]][testling-url]
 
-An ES7 spec-compliant `String.prototype.trimRight` shim. Invoke its "shim" method to shim `String.prototype.trimRight` if it is unavailable.
+A spec-proposal-compliant `String.prototype.trimRight` shim. Invoke its "shim" method to shim `String.prototype.trimRight` if it is unavailable.
+
+This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the [spec](http://www.ecma-international.org/ecma-262/6.0/#sec-object.assign). In an ES6 environment, it will also work properly with `Symbol`s.
 
 Most common usage:
 ```js
@@ -22,7 +24,7 @@ if (!String.prototype.trimRight) {
 	trimRight.shim();
 }
 
-assert(trimRight(' \t\na \t\n') === ' \t\na \t\n'.trimRight());
+assert(trimRight(' \t\na \t\n ') === ' \t\na \t\n '.trimRight());
 ```
 
 ## Tests

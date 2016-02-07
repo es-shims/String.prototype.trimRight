@@ -1,6 +1,6 @@
 1.0.1 / 2015-07-29
 =================
-  * Fix deps that were mistakenly dev deps
+  * Fix deps mistakenly being dev deps
 
 1.0.0 / 2015-07-29
 =================
