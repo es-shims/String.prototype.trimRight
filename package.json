@@ -42,7 +42,7 @@
 		"tape": "^4.5.1",
 		"covert": "^1.1.0",
 		"jscs": "^3.0.3",
-		"nsp": "^2.3.2",
+		"nsp": "^2.4.0",
 		"eslint": "^2.9.0",
 		"@ljharb/eslint-config": "^4.0.0",
 		"@es-shims/api": "^1.2.0"
