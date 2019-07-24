@@ -14,7 +14,7 @@ var functionsHaveNames = require('functions-have-names')();
 test('shimmed', function (t) {
 	t.equal(String.prototype.trimRight.length, 0, 'String#trimRight has a length of 0');
 	t.test('Function name', { skip: !functionsHaveNames }, function (st) {
-		st.equal(String.prototype.trimRight.name, 'trimRight', 'String#trimRight has name "trimRight"');
+		st.equal((/^(?:trimRight|trimEnd)$/).test(String.prototype.trimRight.name), true, 'String#trimRight has name "trimRight" or "trimEnd"');
 		st.end();
 	});
 
