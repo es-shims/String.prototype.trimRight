@@ -9,7 +9,7 @@ var test = require('tape');
 var defineProperties = require('define-properties');
 var bind = require('function-bind');
 var isEnumerable = Object.prototype.propertyIsEnumerable;
-var functionsHaveNames = function f() {}.name === 'f';
+var functionsHaveNames = require('functions-have-names')();
 
 test('shimmed', function (t) {
 	t.equal(String.prototype.trimRight.length, 0, 'String#trimRight has a length of 0');
