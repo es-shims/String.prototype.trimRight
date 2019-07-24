@@ -1,6 +1,8 @@
 {
 	"rules": {
 		"max-nested-callbacks": [2, 3],
-		"no-invalid-this": 1
+		"max-statements-per-line": 0,
+		"no-invalid-this": 1,
+		"no-magic-numbers": 0,
 	}
 }
