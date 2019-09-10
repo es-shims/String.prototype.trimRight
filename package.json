@@ -36,9 +36,9 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
-		"@ljharb/eslint-config": "^13.1.1",
+		"@ljharb/eslint-config": "^14.1.0",
 		"covert": "^1.1.1",
-		"eslint": "^5.16.0",
+		"eslint": "^6.3.0",
 		"functions-have-names": "^1.1.1",
 		"tape": "^4.11.0"
 	},
