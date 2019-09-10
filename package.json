@@ -1,6 +1,6 @@
 {
 	"name": "string.prototype.trimright",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"author": "Jordan Harband",
 	"description": "ES7 spec-compliant String.prototype.trimRight shim.",
 	"license": "MIT",
@@ -10,8 +10,8 @@
 		"test": "npm run tests-only",
 		"posttest": "npx aud",
 		"tests-only": "npm run test:shimmed && npm run test:module",
-		"test:shimmed": "node test/shimmed.js",
-		"test:module": "node test/index.js",
+		"test:shimmed": "node test/shimmed",
+		"test:module": "node test",
 		"coverage": "covert test/*.js",
 		"lint": "eslint ."
 	},
