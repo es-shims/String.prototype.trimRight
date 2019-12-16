@@ -2,6 +2,9 @@
 	"name": "string.prototype.trimright",
 	"version": "2.1.0",
 	"author": "Jordan Harband",
+	"funding": {
+		"url": "https://github.com/sponsors/ljharb"
+	},
 	"description": "ES7 spec-compliant String.prototype.trimRight shim.",
 	"license": "MIT",
 	"main": "index.js",
