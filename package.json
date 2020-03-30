@@ -5,7 +5,7 @@
 	"funding": {
 		"url": "https://github.com/sponsors/ljharb"
 	},
-	"description": "ES7 spec-compliant String.prototype.trimRight shim.",
+	"description": "ES2019 spec-compliant String.prototype.trimLeft shim.",
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
@@ -27,10 +27,13 @@
 		"String.prototype.trimRight",
 		"string",
 		"ES7",
+		"ES2019",
 		"shim",
 		"trim",
 		"trimLeft",
+		"trimStart",
 		"trimRight",
+		"trimEnd",
 		"polyfill",
 		"es-shim API"
 	],
