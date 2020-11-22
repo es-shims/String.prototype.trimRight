@@ -1,6 +1,6 @@
 {
 	"name": "string.prototype.trimright",
-	"version": "2.1.2",
+	"version": "2.1.3",
 	"author": "Jordan Harband <ljharb@gmail.com>",
 	"funding": {
 		"url": "https://github.com/sponsors/ljharb"
